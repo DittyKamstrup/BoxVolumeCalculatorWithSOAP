@@ -17,6 +17,7 @@ namespace BVCConsoleApp
             var getVolumeResult = service.GetVolume(2, 2, 2);
 
             Console.WriteLine("1. resultat (forventet : 2) : " + getSideResult + ", 2. resultat (forventet: 8) : " + getVolumeResult);
+            Console.ReadLine();
         }
     }
 }
