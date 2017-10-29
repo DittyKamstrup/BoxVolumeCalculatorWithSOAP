@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxVolumeCalculatorWithSOAP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxVolumeCalculatorWithSOAPTests", "BoxVolumeCalculatorWithSOAPTests\BoxVolumeCalculatorWithSOAPTests.csproj", "{FF89E2F4-D210-46D3-AC4D-F2727F843E21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BVCConsoleApp", "BVCConsoleApp\BVCConsoleApp.csproj", "{64AA9DCD-B151-43A6-9A59-A13A1D2E720C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E06BDE2-7826-4856-AAD2-9A3EECB682CA} = {7E06BDE2-7826-4856-AAD2-9A3EECB682CA}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{FF89E2F4-D210-46D3-AC4D-F2727F843E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF89E2F4-D210-46D3-AC4D-F2727F843E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF89E2F4-D210-46D3-AC4D-F2727F843E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64AA9DCD-B151-43A6-9A59-A13A1D2E720C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64AA9DCD-B151-43A6-9A59-A13A1D2E720C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64AA9DCD-B151-43A6-9A59-A13A1D2E720C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64AA9DCD-B151-43A6-9A59-A13A1D2E720C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
