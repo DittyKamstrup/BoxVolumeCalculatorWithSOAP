@@ -12,22 +12,16 @@ namespace BoxVolumeCalculatorWithSOAP
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        public double GetSide(double volume, double side1, double side2)
         {
-            return string.Format("You entered: {0}", value);
+            double length = volume / (side1 * side2);
+            return length;
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public double GetVolume(double length, double width, double height)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            double volume = length * width * height;
+            return volume;
         }
     }
 }

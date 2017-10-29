@@ -14,12 +14,11 @@ namespace BoxVolumeCalculatorWithSOAP
     {
 
         [OperationContract]
-        string GetData(int value);
+        double GetVolume(double length, double width, double height);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        double GetSide(double volume, double side1, double side2);
 
-        // TODO: Add your service operations here
     }
 
 
